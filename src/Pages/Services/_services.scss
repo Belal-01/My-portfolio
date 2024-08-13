@@ -1,0 +1,14 @@
+.services{
+  
+  &__header{
+    text-align: center;
+  }
+  &__title{
+    text-align: center;
+    margin:rem(10) 0;
+  }
+  &__gallery{
+    @include flex(row ,space-between,top,20);
+    margin:rem(60) 0 ;
+  }
+}

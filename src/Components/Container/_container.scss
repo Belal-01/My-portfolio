@@ -1,0 +1,12 @@
+.first-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container{  
+  width:75%;
+  flex-shrink: 0;
+  position: relative;
+}

@@ -1,0 +1,50 @@
+.home{
+  @include flex(row,space-between,center,40);
+ // margin-top: rem(50);
+  &__img{
+    flex:1;
+    align-self: center;
+   // background-color: pink;
+    text-align: center;
+  }
+  &__blob{
+   max-width:80%;
+   min-width: rem(320);
+   fill:$first-color;
+   filter: drop-shadow(0 12px 12px hsla($hue,100%,40%,.2));
+
+  }
+  &__aboutMe{
+    flex:1;
+  //  background-color: lightblue;
+  &--title{
+    margin-bottom:rem(8);
+  }
+  &--discrebtion{
+    p{
+      color:$text-color;
+      font-size: $normal-font-size;
+      margin: rem(30) 0;
+    }
+  }
+  &--button{
+    margin-top:rem(30);
+  }
+  &--socialMedia{
+    @include flex(row,start,center,20);
+    margin-top: rem(30);
+    a{
+    @include flex(row,center,center,0);
+      padding:rem(8);
+      background-color: $first-color-alt;
+      color:$title-color;
+      font-size: $bigger-font-size;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      transition: transform .4s;
+    }
+    a:hover{
+      transform: translateY(rem(-4));
+    }
+  }
+  }
+}

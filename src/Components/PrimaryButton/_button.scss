@@ -1,0 +1,11 @@
+.primary-button{
+  border:none;
+  padding:rem(8) rem(15);
+  border-radius: rem(6);
+  background-color: $first-color;
+  color:$title-color;
+  font-weight: $font-regular;
+}
+.primary-button:hover{
+  box-shadow: 0 8px 20px hsla($hue, 100%, 40%, .2);
+}

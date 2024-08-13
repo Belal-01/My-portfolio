@@ -1,0 +1,70 @@
+.About{
+  @include flex(row,space-between,center,40);
+ // margin-top: rem(50);
+
+  &__img{
+    flex:1;
+    align-self: center;
+   // background-color: pink;
+    text-align: center;
+  }
+  &__blob{
+    max-width:80%;
+    min-width: rem(320);
+    & path{
+      stroke: $first-color;
+    }
+   }
+ 
+  &__data{
+    flex:1;
+  //  background-color: lightblue;
+  &--title{
+  
+  }
+  &--discrebtion{
+    p{
+      color:$text-color;
+      font-size: $normal-font-size;
+      margin: rem(20) 0;
+    }
+  }
+  &--button{
+    margin-top:rem(30);
+  }
+ 
+  }
+}
+
+.skills{
+  @include flex(row,space-between,top,50);
+  height:rem(400);
+  &__describtion{
+    flex:1;
+  &--title{
+   // margin-top:rem(8);
+  }
+  &--info{
+    p{
+      color:$text-color;
+      font-size: $normal-font-size;
+      margin: rem(20) 0;
+    }
+  }
+  &--button{
+    margin-top:rem(30);
+  }
+ 
+  }
+  &__gallery{
+    flex:1;
+    @include flex(column,start,space-between,10);
+    flex-wrap: wrap;
+    &--skill{
+      flex:1 1 20%;
+      max-height:rem(50)
+    }
+
+  }
+
+}

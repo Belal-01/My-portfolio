@@ -1,0 +1,52 @@
+.project{
+  flex:1 1 30%;
+  max-width: rem(500);
+  position:relative;
+  overflow:hidden;
+
+  img{
+    width: 100%;
+    border-radius: rem(15);
+  }
+  &__review{
+    @include flex(column,center,center);
+    background: linear-gradient(to top,$project-flow-color,transparent);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    border-radius: rem(15);
+    padding-top:10%;
+    position:absolute;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    transition:opacity .5s ease ,bottom .4s;
+    &--header{
+      font-size: $smaller-font-size;
+    }
+    &--title{    
+      margin:rem(2) 0 rem(10) 0 ;
+
+    }
+    &--viewer{  
+      font-size: $smaller-font-size;
+      
+      &--link-icon{
+        font-size:$h3-font-size ;
+        color:$title-color;
+        padding-left:rem(7);
+      }
+    }
+ 
+  }
+  &:hover &__review{
+    bottom:0;
+    opacity: 1;
+  }
+ 
+
+}
+// .project:hover .project__review{
+//   top:0;
+// }

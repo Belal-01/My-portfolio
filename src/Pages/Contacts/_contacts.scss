@@ -1,0 +1,50 @@
+.contact{
+  @include flex(column,center ,center);
+  &__header{
+    text-align: center;
+  }
+  &__title{
+    text-align: center;
+    margin:rem(10) 0;
+  }
+  &__form{
+  width: 70%;
+  min-width:rem(400);
+  margin-top: rem(30);
+  @include flex(column,top,center,20);
+    &--email{
+      @include flex(row,space-between,center,20);
+      width: 100%;      
+      input{
+        flex:1 1 40%;
+        min-width:rem(40);
+        color:$title-color;
+        background-color: $container-color;
+        border: none;
+        padding:rem(15); 
+        border-radius: rem(5);
+        &::placeholder{
+          color:$text-color;
+        }
+      }
+    }
+    &--message{
+      width: 100%;
+      textarea{
+        width:inherit;
+        height: rem(200);
+        color:$title-color;
+        background-color: $container-color;
+        border: none;
+        padding:rem(15); 
+        border-radius: rem(5);
+       resize: none;
+        &::placeholder{
+          color:$text-color;
+        }
+      }
+     
+    }
+
+  }
+}

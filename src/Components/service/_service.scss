@@ -1,0 +1,25 @@
+.service{
+  background-color: $container-color;
+  max-width: rem(300);
+  padding:rem(40) rem(20);
+  border-radius: rem(15);
+  .service__logo{
+    font-size: rem(40);
+    color:$first-color;
+    text-align: center;
+
+  }
+  &__title{
+    text-align: center;
+    margin:rem(15) 0;
+
+  }
+  &__describtion{
+    text-align: center;
+    color: $text-color;
+    font-size: $small-font-size;
+
+    
+  }
+
+}

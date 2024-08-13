@@ -1,0 +1,15 @@
+.projects{
+  
+  &__header{
+    text-align: center;
+  }
+  &__title{
+    text-align: center;
+    margin:rem(10) 0;
+  }
+  &__gallery{
+    @include flex(row ,space-between,top,20);
+    flex-wrap: wrap;
+    margin:rem(60) 0 ;
+  }
+}
