@@ -1,12 +1,14 @@
-import React from 'react'
+
 import PrimaryButton from '../../Components/PrimaryButton/Button'
 import { FaGithub } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { FaDribbble } from "react-icons/fa";
+import Container from '../../Components/Container/Container';
 
 const Home = () => {
   return (
-    <section className='home'>
+    <Container black ={true}>
+       <section className='home' id='home'>
       <div className="home__aboutMe">
         <div className="home__aboutMe--header">
           <span className='second-title'>Hello ,</span>
@@ -67,9 +69,9 @@ const Home = () => {
         </defs>
         </svg>
       </div>
-      
-
     </section>
+    </Container>
+   
   )
 }
 

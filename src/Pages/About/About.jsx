@@ -1,10 +1,15 @@
-import React from 'react'
+
 import PrimaryButton from '../../Components/PrimaryButton/Button'
+import Container from '../../Components/Container/Container';
 
 const About = () => {
+
+  
   return (
     <>
-    <section className='About'>
+    
+  <Container black={false} >
+    <section className='About' id='about'>
     <div className="About__img">
     <svg className='About__blob' viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
      <mask id="maskBorder" mask-type="alpha">
@@ -38,7 +43,7 @@ const About = () => {
       {/* <!-- Insert your profile (recommended size: 640 x 940) --> */}
       <image className = "About__img--profile "id="imageBorder" width="640" height="940" href="../../../public/img/photo_٢٠٢٤-٠٨-١٢_٠٠-٣٧-٢٠-removebg-preview.png"/>
        </defs>
-</svg>
+    </svg>
     </div>
     <div className="About__data">
       <div className="About__data--header">
@@ -57,10 +62,11 @@ const About = () => {
         <PrimaryButton >Contact Me</PrimaryButton>
       </div>     
     </div>
-   
-    
-
     </section>
+  </Container>
+
+
+  <Container black={true}>   
     <section className='skills'>
       <div className="skills__describtion">
         <div className="skills__describtion--header">
@@ -82,6 +88,7 @@ const About = () => {
           </PrimaryButton>
         </div>
       </div>
+      <div className="skills__gall flex">
       <div className="skills__gallery">
       <div className="skills__gallery--skill">
         <span className="second-sub-title">01. </span>
@@ -112,9 +119,14 @@ const About = () => {
         <span className="second-title">Git&GitHub</span>
       </div>
       </div>
+      </div>
+      
 
     </section>
+  </Container>
     </>
+    
+    
 
   )
 }

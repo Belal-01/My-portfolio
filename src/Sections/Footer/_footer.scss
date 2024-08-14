@@ -1,0 +1,63 @@
+.footer{
+  @include flex(row , space-between,center,40);
+  background-color: $container-color;
+  padding-top:rem(700);
+  padding:0 12%;
+  height:rem(150);
+ // margin-top: rem(200);
+  z-index: 0;
+  &__logo{
+    flex:1 1 35%;
+   color:$title-color;
+   span{
+    color:$first-color;
+   }
+  }
+  &__contact{
+    flex:1 1 20%;
+    min-width: rem(200);
+    @include flex(row,space-between,center,10);
+    a{
+      @include flex(row,center,center,0);
+        padding:rem(8);
+        background-color: $first-color-alt;
+        color:$title-color;
+        font-size: $bigger-font-size;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        transition: transform .4s;
+      }
+      a:hover{
+        transform: translateY(rem(-5));
+      }
+
+  }
+  &__copyRight{
+    flex:1 1 35%;
+    text-align: center;
+    @include flex(row,end,center);
+    small{
+      color:$text-color;   
+      
+    }
+    a{
+      color:$first-color;
+    }
+   
+  }
+}
+.scroll-up{
+  background-color: $body-color;
+  width: rem(35);
+  padding:rem(4) 0;
+  text-align: center;
+  border-radius: rem(18);
+  color:$first-color;
+  font-size: rem(20);
+  position: fixed;
+  bottom:64px;
+  right:32px;
+  transition:transform .4s ease;
+}
+.scroll-up:hover{
+  transform: translateY(-10px);
+}

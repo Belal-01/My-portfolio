@@ -1,9 +1,13 @@
-import React from 'react'
+
 import Project from '../../Components/Project/Project'
+import Container from '../../Components/Container/Container'
 
 const Projects = () => {
   return (
-      <section className='projects'>
+    <Container black={true}>
+
+    
+    <section className='projects' id="projects">
       <div className="projects__header">
         <span className="second-title">My </span>
         <span className="second-sub-title"> projects</span>
@@ -19,11 +23,10 @@ const Projects = () => {
         <Project />
         <Project />
 
-
-
       </div>
 
     </section>
+    </Container>
   )
 }
 

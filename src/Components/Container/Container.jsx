@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Container = ({children}) => {
+const Container = ({black,children}) => {
+const styles = {
+  backgroundColor:black? 'hsl(228, 15%, 15%)':'hsl(228, 15%, 20%)'
+}
   return (
-    <div className="first-container">
-      <div className='app-container'>
+      <div style={styles} className='app-container'>
         {children}
       </div>
-    </div>
     
   )
 }

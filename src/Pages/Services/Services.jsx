@@ -1,9 +1,11 @@
-import React from 'react'
+
 import Service from '../../Components/service/Service'
+import Container from '../../Components/Container/Container'
 
 const Services = () => {
   return (
-    <section className='services'>
+    <Container black={false}>
+      <section className='services' id='services'>
       <div className="services__header">
         <span className="second-title">My </span>
         <span className="second-sub-title"> Services</span>
@@ -33,6 +35,8 @@ const Services = () => {
       </div>
 
     </section>
+    </Container>
+    
   )
 }
 

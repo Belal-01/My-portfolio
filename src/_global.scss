@@ -66,8 +66,12 @@ body {
   font-size:$normal-font-size;
   background-color: $body-color;
   color: $title-color;
-  padding-top:rem(90);
-  padding-bottom:rem(1000)
+  padding-top:rem(80);
+  position:relative;
+ // height: 120%;
+  
+
+ // padding-bottom:rem(1000)
 }
 
 ul {
@@ -78,9 +82,27 @@ a {
   text-decoration: none;
 }
 section{
-  padding:rem(60) 0;
+  padding:rem(130) 0 rem(60) 0;
+  width:75%;
+ // @include flex(column,center, center);
+ // margin-bottom:rem(500);
 
 }
+// ================ scroll bar 
+::-webkit-scrollbar{
+  width:rem(10);
+  background-color:hsl(228,12%,25%);
+  border-radius: rem(8);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(230, 8%, 35%);
+  border-radius: rem(8);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(230, 8%, 45%);
+
+}
+
 
 // ==========  Titles =================
 

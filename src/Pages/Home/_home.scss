@@ -1,6 +1,6 @@
 .home{
   @include flex(row,space-between,center,40);
- // margin-top: rem(50);
+  padding:rem(100) 0 rem(150) 0;
   &__img{
     flex:1;
     align-self: center;
@@ -8,8 +8,8 @@
     text-align: center;
   }
   &__blob{
-   max-width:80%;
-   min-width: rem(320);
+   width:80%;
+   min-width: rem(380);
    fill:$first-color;
    filter: drop-shadow(0 12px 12px hsla($hue,100%,40%,.2));
 
@@ -43,7 +43,7 @@
       transition: transform .4s;
     }
     a:hover{
-      transform: translateY(rem(-4));
+      transform: translateY(rem(-5));
     }
   }
   }

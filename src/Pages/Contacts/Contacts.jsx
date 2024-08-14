@@ -1,6 +1,7 @@
 import React from 'react'
 import PrimaryButton from '../../Components/PrimaryButton/Button';
 import emailjs from '@emailjs/browser';
+import Container from '../../Components/Container/Container';
 
 
 const Contacts = () => {
@@ -43,33 +44,35 @@ const Contacts = () => {
     }
 
   return (
- <section className='contact'>
-    <div className="contact__header">
-      <span className="second-title">Get in</span>
-      <span className="second-sub-title"> Touch</span>
-    </div>
-    <div className="contact__title">
-      <span className='title'>Contact Me </span>
-    </div>
+   <Container black={false}>    
+      <section className='contact' id='contact'>
+          <div className="contact__header">
+            <span className="second-title">Get in</span>
+            <span className="second-sub-title"> Touch</span>
+          </div>
+          <div className="contact__title">
+            <span className='title'>Contact Me </span>
+          </div>
 
-    <form action="" ref={contactForm} className='contact__form' id='contact-form' onSubmit={sendEmail}>
-      <div className="contact__form--email">
-        <input type="text" ref={formName} name='client-name' id='client-name' required placeholder='Enter Your Name' />
-        <input type="email" ref={formEmail} name='client-email' id='client-email' required placeholder='Enter Your Email' />
-      </div>
-      <div className="contact__form--message">
-        <textarea name="client-message" ref={formMessage} id="client-message" required placeholder='Enter Your Message'></textarea>
-        <p ref={messageState}></p>
-      </div>      
-      <a type='submit'>
-        <PrimaryButton>
-          Send Message
-        </PrimaryButton>
-      </a>
-   </form>
-    
+          <form action="" ref={contactForm} className='contact__form' id='contact-form' onSubmit={sendEmail}>
+            <div className="contact__form--email">
+              <input type="text" ref={formName} name='client-name' id='client-name' required placeholder='Enter Your Name' />
+              <input type="email" ref={formEmail} name='client-email' id='client-email' required placeholder='Enter Your Email' />
+            </div>
+            <div className="contact__form--message">
+              <textarea name="client-message" ref={formMessage} id="client-message" required placeholder='Enter Your Message'></textarea>
+              <p ref={messageState}></p>
+            </div>      
+            <a type='submit'>
+              <PrimaryButton>
+                Send Message
+              </PrimaryButton>
+            </a>
+        </form>
+          
 
-  </section>
+      </section>
+  </Container>
   )
 }
 

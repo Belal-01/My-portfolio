@@ -19,9 +19,7 @@
   &__data{
     flex:1;
   //  background-color: lightblue;
-  &--title{
-  
-  }
+
   &--discrebtion{
     p{
       color:$text-color;
@@ -37,13 +35,11 @@
 }
 
 .skills{
-  @include flex(row,space-between,top,50);
+  @include flex(row,space-between,center,50);
   height:rem(400);
   &__describtion{
     flex:1;
-  &--title{
-   // margin-top:rem(8);
-  }
+
   &--info{
     p{
       color:$text-color;
@@ -56,13 +52,18 @@
   }
  
   }
-  &__gallery{
+  &__gall{
     flex:1;
-    @include flex(column,start,space-between,10);
-    flex-wrap: wrap;
+  }
+  &__gallery{
+    height: rem(200);   
+    @include flex(column,top,space-between,10);
+    flex-wrap: wrap;   
     &--skill{
       flex:1 1 20%;
-      max-height:rem(50)
+      max-height:rem(50);
+      
+      
     }
 
   }
