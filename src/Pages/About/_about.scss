@@ -36,6 +36,7 @@
 
 .skills{
   @include flex(row,space-between,center,50);
+  padding:rem(60) 0 ;
   height:rem(400);
   &__describtion{
     flex:1;

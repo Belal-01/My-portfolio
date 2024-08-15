@@ -3,10 +3,12 @@
   max-width: rem(500);
   position:relative;
   overflow:hidden;
+ 
 
   img{
     width: 100%;
     border-radius: rem(15);
+   
   }
   &__review{
     @include flex(column,center,center);
@@ -39,6 +41,9 @@
       }
     }
  
+  }
+  &:hover{
+  
   }
   &:hover &__review{
     bottom:0;

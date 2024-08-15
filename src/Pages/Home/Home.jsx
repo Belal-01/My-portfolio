@@ -29,9 +29,9 @@ const Home = () => {
           <PrimaryButton >Let's Talk</PrimaryButton>
         </div>
         <div className="home__aboutMe--socialMedia">
-          <a href=""><FaGithub /></a>
-          <a href=""><FaDribbble /></a>
-          <a href=""><PiLinkedinLogoBold /></a>
+          <a href=""><span className="socialMedia__icon"><FaGithub /></span></a>
+          <a href=""><span className="socialMedia__icon"><FaDribbble /></span></a>
+          <a href=""><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
         </div>
       </div>
       <div className="home__img">

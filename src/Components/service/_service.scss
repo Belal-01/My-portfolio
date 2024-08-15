@@ -3,10 +3,16 @@
   max-width: rem(300);
   padding:rem(40) rem(20);
   border-radius: rem(15);
+  border-width:rem(5px);
+  border-style: outset;
+  border-color: transparent;
+  transition:border .4s,transform .4s;
+  cursor: pointer;
   .service__logo{
     font-size: rem(40);
     color:$first-color;
     text-align: center;
+    transition:filter .4s;
 
   }
   &__title{
@@ -17,9 +23,16 @@
   &__describtion{
     text-align: center;
     color: $text-color;
-    font-size: $small-font-size;
-
-    
+    font-size: $small-font-size;    
+  }
+  &:hover{
+    border-width:rem(5px);
+    border-color:$first-color;
+    border-style:outset;
+    transform:scale(1.04);
+    .service__logo{
+      filter: contrast(1.5);
+    }
   }
 
 }

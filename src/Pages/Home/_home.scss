@@ -35,7 +35,7 @@
     margin-top: rem(30);
     a{
     @include flex(row,center,center,0);
-      padding:rem(8);
+      padding:rem(7) rem(10);
       background-color: $first-color-alt;
       color:$title-color;
       font-size: $bigger-font-size;
@@ -44,6 +44,9 @@
     }
     a:hover{
       transform: translateY(rem(-5));
+      .socialMedia__icon{
+        filter:contrast(2);
+      }
     }
   }
   }

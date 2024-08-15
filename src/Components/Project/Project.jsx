@@ -12,7 +12,7 @@ const Project = () => {
         <div className="project__review--title">
           <span className="second-title">
             Modern Websit
-            </span>
+          </span>
         </div>
         <div className="project__review--viewer">
           <span className="">

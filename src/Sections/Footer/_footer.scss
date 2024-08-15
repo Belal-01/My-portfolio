@@ -19,7 +19,7 @@
     @include flex(row,space-between,center,10);
     a{
       @include flex(row,center,center,0);
-        padding:rem(8);
+        padding:rem(7) rem(10);
         background-color: $first-color-alt;
         color:$title-color;
         font-size: $bigger-font-size;
@@ -28,6 +28,9 @@
       }
       a:hover{
         transform: translateY(rem(-5));
+        .contact__icon{
+          filter:contrast(2)
+        }
       }
 
   }
@@ -35,14 +38,15 @@
     flex:1 1 35%;
     text-align: center;
     @include flex(row,end,center);
+    &--mark{
+      font-size:$normal-font-size;
+    }
     small{
-      color:$text-color;   
-      
+      color:$text-color;        
     }
     a{
       color:$first-color;
-    }
-   
+    }   
   }
 }
 .scroll-up{
@@ -55,9 +59,17 @@
   font-size: rem(20);
   position: fixed;
   bottom:64px;
-  right:32px;
-  transition:transform .4s ease;
+  right:-100%;
+  transition:right .4s ,transform .4s ease;
+  
 }
 .scroll-up:hover{
   transform: translateY(-10px);
+  .scroll-up__icon{
+    transition:filter .4s;
+    filter:contrast(2);
+   }
+}
+.scroll-up__show{
+  right:32px;
 }

@@ -19,8 +19,13 @@ const Header = () => {
  const naCla = window.scrollY>=50?'navbar blur-navbar':'navbar';
  setNavClass(naCla);
  }
+
  React.useEffect(()=>{
-  window.addEventListener('scroll',blurHeader)
+  window.addEventListener('scroll',()=>{
+    blurHeader()
+    handleActiveNavItemColor2()
+
+  })
  },[])
 
 React.useEffect(()=>{
@@ -56,6 +61,19 @@ const handleActiveNavItemColor = useCallback((item)=>{
   else
   setMenuActiveColor(prevState=>({...prevState,Contact:true}));
 },[])
+const handleActiveNavItemColor2 = ()=>{
+  if(window.scrollY>=3200){
+    handleActiveNavItemColor('Contact')
+  }else if(window.scrollY>=2350){
+    handleActiveNavItemColor('Projects')
+  }else if (window.scrollY>=1680){
+    handleActiveNavItemColor('Services')
+  }else if(window.scrollY>=680){
+    handleActiveNavItemColor('About')
+  }else 
+    handleActiveNavItemColor('Home')
+  
+}
 
 
   return (

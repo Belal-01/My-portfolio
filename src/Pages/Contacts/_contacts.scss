@@ -23,10 +23,17 @@
         border: none;
         padding:rem(15); 
         border-radius: rem(5);
+        outline: none;
+        transition:outline .2s;
         &::placeholder{
           color:$text-color;
         }
+        &:focus{
+          outline:rem(2) outset $first-color;
+         
+        }
       }
+      
     }
     &--message{
       width: 100%;
@@ -38,9 +45,15 @@
         border: none;
         padding:rem(15); 
         border-radius: rem(5);
-       resize: none;
+        resize: none;
+        outline: none;
+        transition:outline .2s;
         &::placeholder{
           color:$text-color;
+        }
+        &:focus{
+          outline:rem(2) outset $first-color;
+         
         }
       }
      

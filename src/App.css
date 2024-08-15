@@ -88,10 +88,11 @@ section {
   background-color: hsl(162, 100%, 40%);
   color: hsl(228, 8%, 95%);
   font-weight: 400;
+  transition: box-shadow 0.4s;
 }
 
 .primary-button:hover {
-  box-shadow: 0 8px 20px hsla(162, 100%, 40%, 0.2);
+  box-shadow: 0px 5px 10px hsla(162, 100%, 40%, 0.2);
 }
 
 .service {
@@ -99,11 +100,17 @@ section {
   max-width: 18.75rem;
   padding: 2.5rem 1.25rem;
   border-radius: 0.9375rem;
+  border-width: 0.3125pxrem;
+  border-style: outset;
+  border-color: transparent;
+  transition: border 0.4s, transform 0.4s;
+  cursor: pointer;
 }
 .service .service__logo {
   font-size: 2.5rem;
   color: hsl(162, 100%, 40%);
   text-align: center;
+  transition: filter 0.4s;
 }
 .service__title {
   text-align: center;
@@ -113,6 +120,15 @@ section {
   text-align: center;
   color: hsl(228, 8%, 65%);
   font-size: 0.813rem;
+}
+.service:hover {
+  border-width: 0.3125pxrem;
+  border-color: hsl(162, 100%, 40%);
+  border-style: outset;
+  transform: scale(1.04);
+}
+.service:hover .service__logo {
+  filter: contrast(1.5);
 }
 
 .project {
@@ -322,7 +338,7 @@ section {
   -moz-column-gap: 0rem;
        column-gap: 0rem;
   row-gap: 0rem;
-  padding: 0.5rem;
+  padding: 0.4375rem 0.625rem;
   background-color: hsl(162, 60%, 35%);
   color: hsl(228, 8%, 95%);
   font-size: 1.25rem;
@@ -332,6 +348,9 @@ section {
 }
 .footer__contact a:hover {
   transform: translateY(-0.3125rem);
+}
+.footer__contact a:hover .contact__icon {
+  filter: contrast(2);
 }
 .footer__copyRight {
   flex: 1 1 35%;
@@ -343,6 +362,9 @@ section {
   -moz-column-gap: 0rem;
        column-gap: 0rem;
   row-gap: 0rem;
+}
+.footer__copyRight--mark {
+  font-size: 0.938rem;
 }
 .footer__copyRight small {
   color: hsl(228, 8%, 65%);
@@ -361,12 +383,20 @@ section {
   font-size: 1.25rem;
   position: fixed;
   bottom: 64px;
-  right: 32px;
-  transition: transform 0.4s ease;
+  right: -100%;
+  transition: right 0.4s, transform 0.4s ease;
 }
 
 .scroll-up:hover {
   transform: translateY(-10px);
+}
+.scroll-up:hover .scroll-up__icon {
+  transition: filter 0.4s;
+  filter: contrast(2);
+}
+
+.scroll-up__show {
+  right: 32px;
 }
 
 .home {
@@ -422,7 +452,7 @@ section {
   -moz-column-gap: 0rem;
        column-gap: 0rem;
   row-gap: 0rem;
-  padding: 0.5rem;
+  padding: 0.4375rem 0.625rem;
   background-color: hsl(162, 60%, 35%);
   color: hsl(228, 8%, 95%);
   font-size: 1.25rem;
@@ -432,6 +462,9 @@ section {
 }
 .home__aboutMe--socialMedia a:hover {
   transform: translateY(-0.3125rem);
+}
+.home__aboutMe--socialMedia a:hover .socialMedia__icon {
+  filter: contrast(2);
 }
 
 .About {
@@ -475,6 +508,7 @@ section {
   -moz-column-gap: 3.125rem;
        column-gap: 3.125rem;
   row-gap: 3.125rem;
+  padding: 3.75rem 0;
   height: 25rem;
 }
 .skills__describtion {
@@ -590,12 +624,17 @@ section {
   border: none;
   padding: 0.9375rem;
   border-radius: 0.3125rem;
+  outline: none;
+  transition: outline 0.2s;
 }
 .contact__form--email input::-moz-placeholder {
   color: hsl(228, 8%, 65%);
 }
 .contact__form--email input::placeholder {
   color: hsl(228, 8%, 65%);
+}
+.contact__form--email input:focus {
+  outline: 0.125rem outset hsl(162, 100%, 40%);
 }
 .contact__form--message {
   width: 100%;
@@ -609,10 +648,15 @@ section {
   padding: 0.9375rem;
   border-radius: 0.3125rem;
   resize: none;
+  outline: none;
+  transition: outline 0.2s;
 }
 .contact__form--message textarea::-moz-placeholder {
   color: hsl(228, 8%, 65%);
 }
 .contact__form--message textarea::placeholder {
   color: hsl(228, 8%, 65%);
+}
+.contact__form--message textarea:focus {
+  outline: 0.125rem outset hsl(162, 100%, 40%);
 }/*# sourceMappingURL=App.css.map */
