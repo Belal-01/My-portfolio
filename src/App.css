@@ -428,6 +428,7 @@ section {
   color: hsl(228, 8%, 65%);
   font-size: 0.938rem;
   margin: 1.875rem 0;
+  max-width: 28.125rem;
 }
 .home__aboutMe--button {
   margin-top: 1.875rem;
@@ -493,6 +494,7 @@ section {
   color: hsl(228, 8%, 65%);
   font-size: 0.938rem;
   margin: 1.25rem 0;
+  max-width: 28.125rem;
 }
 .About__data--button {
   margin-top: 1.875rem;
@@ -515,6 +517,7 @@ section {
   color: hsl(228, 8%, 65%);
   font-size: 0.938rem;
   margin: 1.25rem 0;
+  max-width: 26.875rem;
 }
 .skills__describtion--button {
   margin-top: 1.875rem;
@@ -548,11 +551,11 @@ section {
 .services__gallery {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: top;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 1.25rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  row-gap: 2.5rem;
   margin: 3.75rem 0;
 }
 
@@ -661,6 +664,7 @@ section {
 @media (max-width: 430px) {
   section {
     width: 80%;
+    padding: 6.25rem 0;
   }
   .home {
     display: flex;
@@ -670,6 +674,7 @@ section {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
     row-gap: 2.5rem;
+    padding: 5rem 0;
     flex-wrap: wrap;
   }
   .home__img {
@@ -747,19 +752,22 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-    row-gap: 2.5rem;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    row-gap: 1.875rem;
     flex-wrap: wrap;
+  }
+  .service {
+    max-width: 90%;
   }
   .projects__gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-    row-gap: 1.25rem;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    row-gap: 1.875rem;
     flex-wrap: wrap;
   }
   .project {
@@ -802,5 +810,204 @@ section {
     -moz-column-gap: 0rem;
          column-gap: 0rem;
     row-gap: 0rem;
+  }
+  .footer__copyRight small {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 750px) {
+  section {
+    width: 80%;
+    padding: 6.25rem 0;
+  }
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 3.75rem;
+         column-gap: 3.75rem;
+    row-gap: 3.75rem;
+    padding: 5rem 0;
+    flex-wrap: wrap;
+  }
+  .home__img {
+    flex: 1 1 80%;
+  }
+  .home__blob {
+    min-width: 17.5rem;
+  }
+  .home__aboutMe {
+    flex: 1 1 80%;
+    text-align: center;
+  }
+  .home__aboutMe--discrebtion {
+    padding: 0 10%;
+  }
+  .home__aboutMe--socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+    row-gap: 1.25rem;
+  }
+  .About {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 3.75rem;
+         column-gap: 3.75rem;
+    row-gap: 3.75rem;
+    flex-wrap: wrap;
+  }
+  .About__img {
+    flex: 1 1 80%;
+  }
+  .About__blob {
+    min-width: 17.5rem;
+  }
+  .About__data {
+    flex: 1 1 80%;
+    text-align: center;
+  }
+  .About__data--discrebtion {
+    padding: 0 10%;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .skills__describtion {
+    flex: 1 1 80%;
+    text-align: center;
+    padding: 0 0 0.9375rem 0;
+  }
+  .skills__describtion--info {
+    padding: 0 10%;
+  }
+  .skills__gall {
+    flex: 1 1 80%;
+    padding: 0.9375rem 0 0 0;
+  }
+  .skills__gallery {
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: space-between;
+    -moz-column-gap: 0.625rem;
+         column-gap: 0.625rem;
+    row-gap: 0.625rem;
+    flex-wrap: wrap;
+  }
+  .skills__gallery--skill {
+    flex: 1 1 20%;
+    min-height: 2.5rem;
+    padding-left: 10%;
+  }
+  .services__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .service {
+    max-width: 90%;
+  }
+  .projects__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .project {
+    flex: 1 1 80%;
+    max-width: 90%;
+  }
+  .contact__form {
+    min-width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+    row-gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 1.875rem 0;
+  }
+  .footer__logo {
+    flex: 1 1 80%;
+    text-align: center;
+  }
+  .footer__contact {
+    flex: 1 1 80%;
+    min-width: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1.5625rem;
+         column-gap: 1.5625rem;
+    row-gap: 1.5625rem;
+  }
+  .footer__copyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
+    row-gap: 0rem;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 999px) {
+  section {
+    width: 85%;
+  }
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
+  .home__blob {
+    width: 90%;
+    min-width: 20rem;
+  }
+  .service {
+    padding: 1.875rem 1.25rem;
+  }
+  .service__describtion p {
+    margin: 0;
+    padding: 0 2%;
+  }
+  .projects__gallery {
+    padding: 0 5%;
+  }
+  .project {
+    flex: 1 1 40%;
   }
 }/*# sourceMappingURL=App.css.map */

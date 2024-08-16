@@ -12,7 +12,6 @@
    min-width: rem(380);
    fill:$first-color;
    filter: drop-shadow(0 12px 12px hsla($hue,100%,40%,.2));
-
   }
   &__aboutMe{
     flex:1;
@@ -25,6 +24,7 @@
       color:$text-color;
       font-size: $normal-font-size;
       margin: rem(30) 0;
+      max-width:rem(450);
     }
   }
   &--button{

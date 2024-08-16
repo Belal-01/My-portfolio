@@ -1,10 +1,12 @@
 @media (max-width:430px){
 section{
   width:80%;
+  padding:rem(100) 0 ;
   
 }
 .home{
   @include flex(row,center,center,40);
+  padding:rem(80) 0;
   flex-wrap: wrap;
   &__img{
     flex:1 1 80%;
@@ -39,8 +41,7 @@ section{
 }
 .skills{
   @include flex(row,center,center,40);
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
   &__describtion{
     flex:1 1 80%;
     text-align: center;
@@ -59,15 +60,18 @@ section{
 }
 .services{
   &__gallery{
-    @include flex(row,center,center,40);
+    @include flex(row,center,center,30);
     flex-wrap: wrap;
  
   }
 }
+.service{
+  max-width:90%;
+}
 .projects{
   &__gallery{
-    @include flex(row,center,center,20);
-  flex-wrap: wrap;
+    @include flex(row,center,center,30);
+     flex-wrap: wrap;
   }
 }
 .project{
@@ -93,6 +97,164 @@ section{
   }
   &__copyRight{
     @include flex(row,center,center);
+    small{
+      max-width:60%;
+    }
   }
 }
+}
+@media screen and (min-width:430px) and (max-width:750px) {
+  section{
+    width:80%;
+    padding:rem(100) 0 ;
+    
+  }
+  .home{
+    @include flex(row,center,center,60);
+    padding:rem(80) 0;
+    flex-wrap: wrap;
+    &__img{
+      flex:1 1 80%;
+    }
+    &__blob{
+      min-width: rem(280) ;
+    }
+    &__aboutMe{
+      flex:1 1 80%;
+      text-align: center;
+      &--discrebtion{
+        padding:0 10%;
+      }
+      &--socialMedia{
+      @include flex(row,center,center,20);
+        
+      }
+  
+    }
+  }
+  .About{
+    @include flex(row,center,center,60);
+    flex-wrap: wrap;
+    &__img{
+      flex:1 1 80%
+    }
+    &__blob{
+      min-width: rem(280);
+    }
+    &__data{
+      flex:1 1 80%;
+      text-align:center;
+      &--discrebtion{
+        padding:0 10%;
+
+      }
+    }
+  }
+  .skills{
+    @include flex(row,center,center,40);
+    flex-wrap: wrap;
+    
+    &__describtion{
+      flex:1 1 80%;
+      text-align: center;
+      padding:0 0 rem(15) 0 ;
+      &--info{
+        padding:0 10%;
+
+      }
+    }
+    &__gall{
+      flex:1 1 80%;
+      padding:rem(15) 0 0 0 ;
+
+    }
+    &__gallery{   
+      height: rem(200); 
+      @include flex(column,top,space-between,10);
+      flex-wrap: wrap;
+    //  height:100%;
+      &--skill{
+        flex:1 1 20%;
+        min-height: rem(40);
+        padding-left:10%;
+      }
+    }
+  }
+  .services{
+    &__gallery{
+      @include flex(row,center,center,40);
+      flex-wrap: wrap;
+   
+    }
+  }
+  .service{
+    max-width:90%;
+  }
+  .projects{
+    &__gallery{
+      @include flex(row,center,center,40);
+      flex-wrap: wrap;
+    }
+  }
+  .project{
+    flex:1 1 80%;
+    max-width: 90%;
+  }
+  .contact{
+    &__form{
+      min-width:100%;
+    }
+  }
+  .footer{
+    @include flex(row,center,center,20);
+    flex-wrap:wrap;
+    padding:rem(30) 0;
+    &__logo{
+      flex:1 1 80%;
+      text-align: center;
+    }
+    &__contact{
+      flex:1 1 80%;
+      min-width: rem(200);
+      @include flex(row,center,center,25);
+    }
+    &__copyRight{
+      @include flex(row,center,center);
+    }
+  }
+}
+@media screen and (min-width:750px) and (max-width:999px){
+  section{
+    width:85%;
+  }
+  .home{
+    @include flex(row,space-between,center,30);
+    &__blob{
+      width:90%;
+      min-width:rem(320);
+    }
+  }
+  .services{
+   
+  }
+  .service{
+   padding:rem(30) rem(20);
+   &__describtion{
+    p{
+      margin: 0; 
+      padding:0 2%;  
+    }
+  }
+  }
+  .projects{
+    &__gallery{
+      padding:0 5%;
+    }
+  }
+  .project{
+    flex:1 1 40%;
+  }
+}
+@media screen and (min-width:999px){
+
 }

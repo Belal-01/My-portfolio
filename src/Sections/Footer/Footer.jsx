@@ -36,9 +36,11 @@ const Footer = () => {
       <a href=""><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
       </div>
       <div className="footer__copyRight">
-        <small><span className="footer__copyRight--mark">&copy; </span>Copyright .All rights reserved<br/> 
+        <small>
+          <span className="footer__copyRight--mark">&copy;</span>
+          Copyright .All rights reserved  
           <span>
-          for <a href="">Belal Mustafa</a>
+           for <a href="">Belal Mustafa</a>
           </span>
         </small>
       </div>

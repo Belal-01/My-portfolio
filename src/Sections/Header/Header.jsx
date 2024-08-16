@@ -16,10 +16,10 @@ const Header = () => {
   })
   
   React.useEffect(()=>{
+   const  sections = document.querySelectorAll('.section');
     window.addEventListener('scroll',()=>{
-      blurHeader()
-      activeNavLink()
-  
+      blurHeader();
+      activeNavLink(sections);
     })
    },[])
 
@@ -65,9 +65,9 @@ const handleActiveNavItemColor = useCallback((item)=>{
 },[])
 
 // =========  ===========    handle action active link  ====================
-const sections = document.querySelectorAll('.section');
 
-const activeNavLink = ()=>{
+const activeNavLink = (sections)=>{
+  console.log(sections)
   sections.forEach((current)=>{
     const sectionTop = current.offsetTop-80;
     const sectionHeight = current.offsetHeight

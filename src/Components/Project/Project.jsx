@@ -4,7 +4,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Project = () => {
   return (
     <div className='project'>
-      <img src="../../../public/img/project-img-1.jpg" alt="" />
+      <video src="../../../public/img/draft_27415218820_1699774159_032dbd55-0b91-4cad-aee5-ef2ccdef612c.mp4" width={"300px"} height={'250px'} controls autoPlay muted>
+      </video>
       <div className="project__review">
         <div className="project__review--header">
           <span>web</span>

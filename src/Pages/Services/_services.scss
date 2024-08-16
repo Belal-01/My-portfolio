@@ -8,7 +8,7 @@
     margin:rem(10) 0;
   }
   &__gallery{
-    @include flex(row ,space-between,top,20);
+    @include flex(row ,center,top,40);
     margin:rem(60) 0 ;
   }
 }
