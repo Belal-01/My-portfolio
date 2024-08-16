@@ -9,13 +9,10 @@ const Footer = () => {
   const [scrollUpClass ,setScrollUpClass] = useState('scroll-up');
   
   const scrollUp = ()=>{
-    console.log(window.scrollY);
     if(window.scrollY>=350)
      setScrollUpClass('scroll-up scroll-up__show') 
     else
     setScrollUpClass('scroll-up') 
-
-     console.log(scrollUpClass);
   }
 
   useEffect(()=>{

@@ -14,23 +14,25 @@ const Header = () => {
   Projects:false,
   Contact:false
   })
+  
+  React.useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      blurHeader()
+      activeNavLink()
+  
+    })
+   },[])
+
+   React.useEffect(()=>{
+    localStorage.setItem('colors',JSON.stringify(menuActiveColor));
+  },[menuActiveColor])
 
  function blurHeader(){
  const naCla = window.scrollY>=50?'navbar blur-navbar':'navbar';
  setNavClass(naCla);
  }
 
- React.useEffect(()=>{
-  window.addEventListener('scroll',()=>{
-    blurHeader()
-    handleActiveNavItemColor2()
 
-  })
- },[])
-
-React.useEffect(()=>{
-  localStorage.setItem('colors',JSON.stringify(menuActiveColor));
-},[menuActiveColor])
 /// ===========    for sidebar   =====================
 
  const handletogglebutton = ()=>{
@@ -49,7 +51,7 @@ const handleActiveNavItemColor = useCallback((item)=>{
   Projects:false,
   Contact:false
   }));
-  console.log(menuActiveColor)
+
   if(item==='Home')   
     setMenuActiveColor(prevState=>({...prevState,Home:true}));
   else if(item==='About')
@@ -61,19 +63,21 @@ const handleActiveNavItemColor = useCallback((item)=>{
   else
   setMenuActiveColor(prevState=>({...prevState,Contact:true}));
 },[])
-const handleActiveNavItemColor2 = ()=>{
-  if(window.scrollY>=3200){
-    handleActiveNavItemColor('Contact')
-  }else if(window.scrollY>=2350){
-    handleActiveNavItemColor('Projects')
-  }else if (window.scrollY>=1680){
-    handleActiveNavItemColor('Services')
-  }else if(window.scrollY>=680){
-    handleActiveNavItemColor('About')
-  }else 
-    handleActiveNavItemColor('Home')
-  
+
+// =========  ===========    handle action active link  ====================
+const sections = document.querySelectorAll('.section');
+
+const activeNavLink = ()=>{
+  sections.forEach((current)=>{
+    const sectionTop = current.offsetTop-80;
+    const sectionHeight = current.offsetHeight
+    const sectionId = current.getAttribute('id')
+    if(window.scrollY>sectionTop&&window.scrollY<sectionTop+sectionHeight) {
+      handleActiveNavItemColor(sectionId);
+    }
+  })
 }
+
 
 
   return (
@@ -95,27 +99,27 @@ const handleActiveNavItemColor2 = ()=>{
           </li>
           
           <li>
-            <NavItem href='#home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor}>
+            <NavItem href='#Home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor}>
              Home
             </NavItem>
           </li>
           <li>
-           <NavItem href='#about' active={menuActiveColor.About} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#About' active={menuActiveColor.About} handleActiveColor={handleActiveNavItemColor}>
              About
             </NavItem>
           </li>
           <li>
-           <NavItem href='#services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#Services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}>
              Services
             </NavItem>
           </li>
           <li>
-           <NavItem href='#projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#Projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}>
              Projects
             </NavItem>          
           </li>
           <li>
-            <NavItem href='#contact' active={menuActiveColor.Contact} handleActiveColor={handleActiveNavItemColor}>
+            <NavItem href='#Contact' active={menuActiveColor.Contact} handleActiveColor={handleActiveNavItemColor}>
              Contact
             </NavItem>
           </li>

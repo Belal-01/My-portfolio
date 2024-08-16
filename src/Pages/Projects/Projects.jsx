@@ -7,7 +7,7 @@ const Projects = () => {
     <Container black={true}>
 
     
-    <section className='projects' id="projects">
+    <section className='projects section' id="Projects">
       <div className="projects__header">
         <span className="second-title">My </span>
         <span className="second-sub-title"> projects</span>

@@ -5,7 +5,7 @@ import Container from '../../Components/Container/Container'
 const Services = () => {
   return (
     <Container black={false}>
-      <section className='services' id='services'>
+      <section className='services section' id='Services'>
       <div className="services__header">
         <span className="second-title">My </span>
         <span className="second-sub-title"> Services</span>

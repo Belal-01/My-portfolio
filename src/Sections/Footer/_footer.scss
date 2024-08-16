@@ -1,9 +1,9 @@
 .footer{
   @include flex(row , space-between,center,40);
   background-color: $container-color;
-  padding-top:rem(700);
-  padding:0 12%;
-  height:rem(150);
+ // padding-top:rem(700);
+  padding:rem(30) 12%;
+  // height:rem(150);
  // margin-top: rem(200);
   z-index: 0;
   &__logo{

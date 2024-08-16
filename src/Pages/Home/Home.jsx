@@ -8,7 +8,7 @@ import Container from '../../Components/Container/Container';
 const Home = () => {
   return (
     <Container black ={true}>
-       <section className='home' id='home'>
+       <section className='home section' id='Home'>
       <div className="home__aboutMe">
         <div className="home__aboutMe--header">
           <span className='second-title'>Hello ,</span>

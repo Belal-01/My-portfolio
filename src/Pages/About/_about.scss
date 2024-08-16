@@ -1,11 +1,10 @@
 .About{
   @include flex(row,space-between,center,40);
- // margin-top: rem(50);
 
   &__img{
     flex:1;
     align-self: center;
-   // background-color: pink;
+   
     text-align: center;
   }
   &__blob{
@@ -37,7 +36,7 @@
 .skills{
   @include flex(row,space-between,center,50);
   padding:rem(60) 0 ;
-  height:rem(400);
+ // height:rem(400);
   &__describtion{
     flex:1;
 

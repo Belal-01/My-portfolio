@@ -9,7 +9,7 @@ const About = () => {
     <>
     
   <Container black={false} >
-    <section className='About' id='about'>
+    <section className='About section' id='About'>
     <div className="About__img">
     <svg className='About__blob' viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
      <mask id="maskBorder" mask-type="alpha">
@@ -90,34 +90,34 @@ const About = () => {
       </div>
       <div className="skills__gall flex">
       <div className="skills__gallery">
-      <div className="skills__gallery--skill">
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">01. </span>
         <span className="second-title">HTML & CSS</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">02. </span>
         <span className="second-title">JavaScript</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">03. </span>
         <span className="second-title">Bootstrap</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">04. </span>
         <span className="second-title">SCSS</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">05. </span>
         <span className="second-title">React</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">06. </span>
         <span className="second-title">Figma</span>
-      </div>
-      <div className="skills__gallery--skill">
+      </span>
+      <span className="skills__gallery--skill">
         <span className="second-sub-title">07. </span>       
         <span className="second-title">Git&GitHub</span>
-      </div>
+      </span>
       </div>
       </div>
       

@@ -45,7 +45,7 @@ const Contacts = () => {
 
   return (
    <Container black={false}>    
-      <section className='contact' id='contact'>
+      <section className='contact section' id='Contact'>
           <div className="contact__header">
             <span className="second-title">Get in</span>
             <span className="second-sub-title"> Touch</span>
