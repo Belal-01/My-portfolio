@@ -41,7 +41,7 @@ const About = () => {
       </pattern>
 
       {/* <!-- Insert your profile (recommended size: 640 x 940) --> */}
-      <image className = "About__img--profile "id="imageBorder" width="640" height="940" href="../../../public/img/photo_٢٠٢٤-٠٨-١٢_٠٠-٣٧-٢٠-removebg-preview.png"/>
+      <image className = "About__img--profile "id="imageBorder" width="640" height="940" href="../../../public/img/photo_2024-08-17_12-44-32-removebg-preview.png"/>
        </defs>
     </svg>
     </div>

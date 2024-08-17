@@ -18,13 +18,15 @@ const Project = (props) => {
   return (
     <div className='project'>
       <video src={`../../../public/video/${props.video}`} className='project-video' width={"100%"}  controls autoPlay muted loop>
+     
+      </video>
       <div className="project__review">
         <div className="project__review--header">
           <span>web</span>
         </div>
         <div className="project__review--title">
           <span className="second-title">
-            Games Viewr
+           {props.title}
           </span>
         </div>
         <div className="project__review--describtion">
@@ -34,27 +36,8 @@ const Project = (props) => {
         </div>
         <div className="project__review--viewer">
           <span className="">
-            View demo 
-            <a className="project__review--viewer--link-icon" href="">
-              <FaExternalLinkAlt />
-            </a>
-          </span>
-        </div>
-      </div>
-      </video>
-      <div className="project__review">
-        <div className="project__review--header">
-          <span>web</span>
-        </div>
-        <div className="project__review--title">
-          <span className="second-title">
-            Modern Websit
-          </span>
-        </div>
-        <div className="project__review--viewer">
-          <span className="">
-            View demo 
-            <a className="project__review--viewer--link-icon" href="">
+          View code on GitHub  
+            <a className="project__review--viewer--link-icon" href={props.url} target='_blank'>
               <FaExternalLinkAlt />
             </a>
           </span>
