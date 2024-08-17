@@ -1,6 +1,6 @@
-import { FaGithub } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import { PiLinkedinLogoBold } from "react-icons/pi";
-import { FaDribbble } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
@@ -31,8 +31,8 @@ const Footer = () => {
       </div>
       </div>
       <div className="footer__contact">
-      <a href=""><span className="contact__icon"><FaGithub /></span></a>
-      <a href=""><span className="contact__icon"><FaDribbble /></span></a>
+      <a href="https://www.instagram.com/bilalmusstafa?igsh=azRnbmhkZmJnbjVx" target="_blank"><span className="contact__icon"><BsInstagram /></span></a>
+      <a href="https://www.facebook.com/belal.khobieh?mibextid=JRoKGi" target="_blank"><span className="contact__icon"><FaFacebook /></span></a>
       <a href=""><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
       </div>
       <div className="footer__copyRight">

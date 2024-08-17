@@ -55,11 +55,13 @@ const About = () => {
       </div>
       <div className="About__data--discrebtion">
         <p>
-          Frontend developer,I create web pages with UI/UX user Interface , I have years of experience and many clients are happy with the projects carried out.
+         As a junior Frontend developer,I possess an impressive arsenal of skills in HTML ,CSS,Bootstrap,javaScript React and Sass ,I excel in designing and maintaining responsive websites that offer a smooth user expeiance,My expertise lies in crafting dynamic ,engaging interfaces throw writing clean and optimized code and utilizing cutting-edge development tools and techniques.
         </p>
       </div>
       <div className="About__data--button">
+        <a href="#Contact">
         <PrimaryButton >Contact Me</PrimaryButton>
+        </a>
       </div>     
     </div>
     </section>
@@ -83,9 +85,11 @@ const About = () => {
           </p>
         </div>
         <div className="skills__describtion--button">
+            <a href="#Projects">
           <PrimaryButton>
-            see Projects
+            see Projects        
           </PrimaryButton>
+            </a>
         </div>
       </div>
       <div className="skills__gall flex">

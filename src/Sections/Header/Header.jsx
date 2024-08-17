@@ -67,7 +67,6 @@ const handleActiveNavItemColor = useCallback((item)=>{
 // =========  ===========    handle action active link  ====================
 
 const activeNavLink = (sections)=>{
-  console.log(sections)
   sections.forEach((current)=>{
     const sectionTop = current.offsetTop-80;
     const sectionHeight = current.offsetHeight

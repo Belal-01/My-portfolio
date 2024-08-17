@@ -16,9 +16,13 @@ const Projects = () => {
         <span className='title'>Recent Projects </span>
       </div>
       <div className="projects__gallery">
-        <Project />
-        <Project />
-        <Project />
+        <Project video = {'CYBROG.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+        <Project video = {'Amazon2.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+        <Project video = {'NoteApp2.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+        <Project video = {'facebook2.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+        <Project video = {'Tenzes2.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+        <Project video = {'portfolio2.mp4'} info={'Responseive website Worked using React ,Sass, with use of Database'}/>
+
 
       </div>
 

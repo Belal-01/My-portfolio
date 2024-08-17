@@ -22,14 +22,16 @@ const Home = () => {
         </div>
         <div className="home__aboutMe--discrebtion">
           <p>
-            Frontend developer,I create web pages with UI/UX user Interface , I have years of experience and many clients are happy with the projects carried out.
+            Passionate Frontend React Developer based in Damascuse ,Syria 
           </p>
         </div>
         <div className="home__aboutMe--button">
-          <PrimaryButton >Let's Talk</PrimaryButton>
+          <a href="../../../public/documents/CV.pdf" download={true}>
+          <PrimaryButton >Download CV</PrimaryButton>
+          </a>
         </div>
         <div className="home__aboutMe--socialMedia">
-          <a href=""><span className="socialMedia__icon"><FaGithub /></span></a>
+          <a href="https://github.com/Belal-01?tab=repositories" target='_blank'><span className="socialMedia__icon"><FaGithub /></span></a>
           <a href=""><span className="socialMedia__icon"><FaDribbble /></span></a>
           <a href=""><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
         </div>

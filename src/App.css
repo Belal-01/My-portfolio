@@ -136,10 +136,11 @@ section {
   max-width: 31.25rem;
   position: relative;
   overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.project img {
+.project video {
   width: 100%;
-  border-radius: 0.9375rem;
 }
 .project__review {
   display: flex;
@@ -154,7 +155,6 @@ section {
   -webkit-backdrop-filter: blur(2px);
   width: 100%;
   height: 100%;
-  border-radius: 0.9375rem;
   padding-top: 10%;
   position: absolute;
   left: 0;
@@ -177,7 +177,7 @@ section {
   padding-left: 0.4375rem;
 }
 .project:hover .project__review {
-  bottom: 0;
+  bottom: 0px;
   opacity: 1;
 }
 
