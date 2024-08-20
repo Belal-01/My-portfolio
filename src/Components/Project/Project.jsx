@@ -17,9 +17,7 @@ const Project = (props) => {
  
   return (
     <div className='project'>
-      <video src={`../../../public/video/${props.video}`} className='project-video' width={"100%"}  controls autoPlay muted loop>
-     
-      </video>
+      <img src="../../../public/img/project-img-1.jpg" alt="" />
       <div className="project__review">
         <div className="project__review--header">
           <span>web</span>
